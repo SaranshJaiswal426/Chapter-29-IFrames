@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SandBoxing</title>
+</head>
+<body>
+    <iframe sandbox src="http://example.com/"></iframe>
+<!-- To allow the page to run scripts and submit forms, add allow-scripts and allow-forms to the sandbox attribute. -->
+<iframe sandbox="allow-scripts allow-forms" src="http://example.com/"></iframe>
+<!-- If there is untrusted content (such as user comments) on the same domain as the parent web page, an iframe can
+be used to disable scripts while still allowing the parent document to interact with it's content using JavaScript. -->
+<iframe sandbox="allow-same-origin allow-top-navigation"
+src="https://www.google.com/search?q=google&oq=google&aqs=edge..69i57j0i131i433i512j69i59l3j69i60l3j5.2034j0j1&sourceid=chrome&ie=UTF-8">
+</body>
+</html>
